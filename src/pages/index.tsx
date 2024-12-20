@@ -9,7 +9,6 @@ const Home: React.FC = () => {
         <title>Hipnotiq Sound Records</title>
         <meta name="description" content="Estudio de grabación profesional" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <div className="bg-custom-black text-custom-white">
         <section className="bg-cover bg-center h-96" style={{ backgroundImage: `url('/banner.png')` }}>
