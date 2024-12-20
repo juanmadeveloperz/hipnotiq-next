@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Declaración de la fuente personalizada */
+@font-face {
+  font-family: 'YourCustomFont';
+  src: url('/fonts/title.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Clase personalizada para la fuente YourCustomFont */
+.font-custom {
+  font-family: 'YourCustomFont', sans-serif;
+}
+
+/* Clase para el efecto neón del título */
+.neon-title {
+  font-family: 'YourCustomFont', sans-serif;
+  color: #c0b1f5; /* Color de la fuente */
+  text-shadow: 0 0 5px #c0b1f5, 0 0 10px #a086ec, 0 0 15px #6608e0, 0 0 20px #5104c6, 0 0 25px #3b02ad, 0 0 30px #3b02ad;
+  font-size: 6rem; /* Ajusta el tamaño según tu preferencia */
+  animation: glow 1.5s infinite alternate;
+}
+
+.neon {
+  box-shadow: 0 0 5px rgba(160, 134, 236, 0.2), 0 0 10px rgba(160, 134, 236, 0.2), 0 0 20px rgba(160, 134, 236, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.neon:hover {
+  box-shadow: 0 0 10px rgba(160, 134, 236, 0.6), 0 0 20px rgba(160, 134, 236, 0.6), 0 0 30px rgba(160, 134, 236, 0.6);
+}
+
+.neon-button {
+  box-shadow: 0 0 5px rgba(160, 134, 236, 0.5), 0 0 10px rgba(160, 134, 236, 0.5), 0 0 20px rgba(160, 134, 236, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 10px rgba(160, 134, 236, 1), 0 0 20px rgba(160, 134, 236, 1), 0 0 30px rgba(160, 134, 236, 1);
+  transform: scale(1.05);
+}
+
+.neon a {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: text-shadow 0.3s ease;
+}
+
+.neon a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #c0b1f5, 0 0 10px #a086ec, 0 0 15px #6608e0, 0 0 20px #5104c6, 0 0 25px #3b02ad, 0 0 30px #3b02ad;
+  }
+  to {
+    text-shadow: 0 0 10px #c0b1f5, 0 0 20px #a086ec, 0 0 30px #6608e0, 0 0 40px #5104c6, 0 0 50px #3b02ad, 0 0 60px #3b02ad;
+  }
+}
+
