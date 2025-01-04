@@ -13,11 +13,14 @@ const Home: React.FC = () => {
       <div className="bg-custom-black text-custom-white">
         <section className="bg-cover bg-center h-96" style={{ backgroundImage: `url('/banner.png')` }}>
           <div className="bg-black bg-opacity-50 h-full flex items-center justify-center pt-16">
-            <h1 className="neon-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center font-custom">Hipnotiq Sound Records</h1>
+            <h1 className="neon-title text-5xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center font-custom">Hipnotiq Sound Records</h1>
           </div>
         </section>
         <section className="p-8 bg-custom-black">
-          <p className="text-4xl text-center font-medium text-custom-white">Descubre lo que hace único a nuestro estudio</p>
+        <p className="text-4xl text-center font-medium text-custom-purple-dark font-mono animate-fadeIn">
+          Descubre lo que hace único a nuestro estudio
+        </p>
+
           <ul className="space-y-4 text-center list-none mt-4">
             <li className="text-lg font-medium tracking-wider text-custom-purple-medium">
               <FaMicrophone className="inline-block mr-2" /> Equipamiento de Alta Calidad

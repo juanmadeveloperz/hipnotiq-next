@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaWhatsapp, FaInstagram, FaEnvelope, FaUser } from 'react-icons/fa'; // Importa íconos
+import { FaWhatsapp, FaInstagram, FaEnvelope, FaUser, FaLink } from 'react-icons/fa'; // Importa íconos
 
 const Footer: React.FC = () => {
   return (
@@ -7,46 +7,60 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
           <h4 className="text-lg font-bold mb-2">Contacto</h4>
-          <p className="neon">
+          <p>
             <FaWhatsapp className="inline-block mr-2 text-green-400" />
             <a href="https://wa.me/34123456789" target="_blank" rel="noopener noreferrer" className="text-green-400">
               +34 123 456 789
             </a>
           </p>
-          <p className="neon">
+          <p>
             <FaEnvelope className="inline-block mr-2 text-blue-400" />
             <a href="mailto:hipnotiqsoundrecords@gmail.com" className="text-blue-400">
               hipnotiqsoundrecords@gmail.com
             </a>
           </p>
-          <p className="neon">
+          <p>
             <FaInstagram className="inline-block mr-2 text-pink-400" />
             <a href="https://www.instagram.com/hipnotiqsoundrecords" target="_blank" rel="noopener noreferrer" className="text-pink-400">
               @hipnotiqsoundrecords
             </a>
           </p>
+          <h4 className="text-lg font-bold mb-2">Patrocinadores</h4>
+          <p><strong>Hipnotiq Shop Moda</strong></p>
+          <p>
+            <FaInstagram className="inline-block mr-2 text-pink-400" />
+            <a href="https://www.instagram.com/hipnotiq" target="_blank" rel="noopener noreferrer" className="text-pink-400">
+              @hipnotiqsoundrecords
+            </a>
+          </p>
+          <p>
+            <FaLink className="inline-block mr-2 text-pink-400" />
+            <a href="https://www.hipnotiq.net/" target="_blank" rel="noopener noreferrer" className="text-pink-400">
+              hipnotiq.net
+            </a>
+          </p>
         </div>
         <div className="mb-4 md:mb-0 text-center">
           <h4 className="text-lg font-bold mb-2">Productor</h4>
-          <p className="neon">
+          <p>
             <FaUser className="inline-block mr-2 text-custom-purple" />
             <span className="text-custom-white">MVG</span>
           </p>
           <button className="neon-button bg-custom-purple text-white py-2 px-4 rounded-full mt-2">
             <FaInstagram className="inline-block mr-2 text-white" />
             <a href="https://www.instagram.com/mvg_official" target="_blank" rel="noopener noreferrer" className="text-white">
-              Sígueme en Instagram
+              Instagram
             </a>
           </button>
           <h4 className="text-lg font-bold mb-2 mt-4">Artista</h4>
-          <p className="neon">
+          <p>
             <FaUser className="inline-block mr-2 text-custom-purple" />
             <span className="text-custom-white">Anthony K</span>
           </p>
           <button className="neon-button bg-custom-purple text-white py-2 px-4 rounded-full mt-2">
             <FaInstagram className="inline-block mr-2 text-white" />
             <a href="https://www.instagram.com/anthony_k_oficial" target="_blank" rel="noopener noreferrer" className="text-white">
-              Sígueme en Instagram
+              Instagram
             </a>
           </button>
         </div>

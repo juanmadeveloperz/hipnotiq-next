@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
           <Link href="/services" className="block md:inline hover:text-blue-500 p-4">Servicios</Link>
         </li>
         <li>
-          <Link href="/portfolio" className="block md:inline hover:text-blue-500 p-4">Portafolio</Link>
+          <Link href="/releases" className="block md:inline hover:text-blue-500 p-4">Lanzamientos</Link>
         </li>
         <li>
           <Link href="/gallery" className="block md:inline hover:text-blue-500 p-4">Galería</Link>
