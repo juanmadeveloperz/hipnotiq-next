@@ -8,6 +8,10 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleCloseMenu = () => { 
+    setIsOpen(false);
+  };
+
   return (
     <nav className="bg-gray-800 p-4 text-white fixed w-full top-0 z-50 flex justify-between items-center">
       <div className="flex items-center">
@@ -23,25 +27,25 @@ const Navbar: React.FC = () => {
       </div>
       <ul className={`md:flex md:items-center md:space-x-4 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-800 md:bg-transparent ${isOpen ? 'block' : 'hidden'}`}>
         <li>
-          <Link href="/" className="block md:inline hover:text-blue-500 p-4">Inicio</Link>
+          <Link href="/" className="block md:inline hover:text-blue-500 p-4" onClick={handleCloseMenu}>Inicio</Link>
         </li>
         <li>
-          <Link href="/about" className="block md:inline hover:text-blue-500 p-4">Sobre Nosotros</Link>
+          <Link href="/about" className="block md:inline hover:text-blue-500 p-4" onClick={handleCloseMenu}>Sobre Nosotros</Link>
         </li>
         <li>
-          <Link href="/services" className="block md:inline hover:text-blue-500 p-4">Servicios</Link>
+          <Link href="/services" className="block md:inline hover:text-blue-500 p-4" onClick={handleCloseMenu}>Servicios</Link>
         </li>
         <li>
-          <Link href="/releases" className="block md:inline hover:text-blue-500 p-4">Lanzamientos</Link>
+          <Link href="/releases" className="block md:inline hover:text-blue-500 p-4" onClick={handleCloseMenu}>Lanzamientos</Link>
         </li>
         <li>
-          <Link href="/gallery" className="block md:inline hover:text-blue-500 p-4">Galería</Link>
+          <Link href="/gallery" className="block md:inline hover:text-blue-500 p-4" onClick={handleCloseMenu}>Galería</Link>
         </li>
         <li>
-          <Link href="/blog" className="block md:inline hover:text-blue-500 p-4">Blog</Link>
+          <Link href="/blog" className="block md:inline hover:text-blue-500 p-4" onClick={handleCloseMenu}>Blog</Link>
         </li>
         <li>
-          <Link href="/contact" className="block md:inline hover:text-blue-500 p-4">Contacto</Link>
+          <Link href="/contact" className="block md:inline hover:text-blue-500 p-4" onClick={handleCloseMenu}>Contacto</Link>
         </li>
       </ul>
     </nav>
